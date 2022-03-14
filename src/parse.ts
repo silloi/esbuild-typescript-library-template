@@ -1,8 +1,10 @@
-import { ParsedText } from "./types/parse";
+import { ParsedText } from "../types/parse";
 
 export const parseText = (text: string): ParsedText => {
   return {
     header: {},
-    contents: [],
+    contents: [{
+      message: text,
+    }],
   };
 };
